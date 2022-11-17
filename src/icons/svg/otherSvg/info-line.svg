@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-info-line",
+  "use": "icon-info-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-info-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M512 0c282.752 0 512 229.248 512 512s-229.248 512-512 512S0 794.752 0 512 229.248 0 512 0z m0 85.333333C276.352 85.333333 85.333333 276.352 85.333333 512s191.018667 426.666667 426.666667 426.666667 426.666667-191.018667 426.666667-426.666667S747.648 85.333333 512 85.333333z m85.333333 298.666667l-37.376 299.008a37.674667 37.674667 0 0 0 32.725334 42.026667l2.304 0.213333L597.333333 725.333333v42.666667H384v-42.666667h5.674667a42.666667 42.666667 0 0 0 42.24-36.650666l31.402666-219.776a36.992 36.992 0 0 0-31.402666-41.856l-2.645334-0.298667L426.666667 426.666667V384h170.666666z m-64-170.666667a64 64 0 1 1 0 128 64 64 0 0 1 0-128z\" p-id=\"6872\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

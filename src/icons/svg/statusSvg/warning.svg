@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-warning",
+  "use": "icon-warning-usage",
+  "viewBox": "0 0 16 16",
+  "content": "<symbol viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-warning\">\n    <path d=\"M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M8.83333333,10.6666667 L7.16666667,10.6666667 L7.16666667,12.3333333 L8.83333333,12.3333333 L8.83333333,10.6666667 Z M9,3.33333333 L7,3.33333333 L7.16666667,10 L8.83333333,10 L9,3.33333333 Z\" id=\"icon-warning_形状结合\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

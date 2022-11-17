@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-alarm-fill",
+  "use": "icon-alarm-fill-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-alarm-fill\"><defs><style type=\"text/css\">@font-face { font-family: feedback-iconfont; src: url(\"//at.alicdn.com/t/font_1031158_1uhr8ri0pk5.eot?#iefix\") format(\"embedded-opentype\"), url(\"//at.alicdn.com/t/font_1031158_1uhr8ri0pk5.woff2\") format(\"woff2\"), url(\"//at.alicdn.com/t/font_1031158_1uhr8ri0pk5.woff\") format(\"woff\"), url(\"//at.alicdn.com/t/font_1031158_1uhr8ri0pk5.ttf\") format(\"truetype\"), url(\"//at.alicdn.com/t/font_1031158_1uhr8ri0pk5.svg#iconfont\") format(\"svg\"); }\n</style></defs><path d=\"M853.333333 853.333333v85.333334H170.666667v-85.333334h682.666666zM512 85.333333a298.666667 298.666667 0 0 1 298.496 288.426667l0.042667 3.114667H810.666667v384a42.666667 42.666667 0 0 1-42.666667 42.666666H256a42.666667 42.666667 0 0 1-42.666667-42.666666v-384A298.794667 298.794667 0 0 1 512 85.333333z m-128 341.333334H298.666667v85.333333h85.333333v-85.333333z m128-256a213.333333 213.333333 0 0 0-213.12 204.074666L298.666667 384h85.333333a128 128 0 0 1 120.490667-127.786667L512 256V170.666667z\" p-id=\"5641\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

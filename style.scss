@@ -1,0 +1,327 @@
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+.jessibuca-container .jessibuca-icon {
+  cursor: pointer;
+  width: 16px;
+  height: 16px; }
+
+.jessibuca-container .jessibuca-poster {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none; }
+
+.jessibuca-container .jessibuca-play-big {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url("../assets/play.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 48px 48px; }
+  .jessibuca-container .jessibuca-play-big:hover {
+    background-image: url("../assets/play-hover.png"); }
+
+.jessibuca-container .jessibuca-loading {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+
+.jessibuca-container .jessibuca-loading-text {
+  line-height: 20px;
+  font-size: 13px;
+  color: #fff;
+  margin-top: 10px; }
+
+.jessibuca-container .jessibuca-controls {
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  user-select: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-controls-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 8px; }
+    .jessibuca-container .jessibuca-controls .jessibuca-controls-item:hover .icon-title-tips {
+      visibility: visible;
+      opacity: 1; }
+  .jessibuca-container .jessibuca-controls .jessibuca-microphone-close {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-icon-audio {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-play {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-pause {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-fullscreen-exit {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-screenshot {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-record {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-fullscreen {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-record-stop {
+    display: none; }
+  .jessibuca-container .jessibuca-controls .jessibuca-icon-audio, .jessibuca-container .jessibuca-controls .jessibuca-icon-mute {
+    z-index: 1; }
+  .jessibuca-container .jessibuca-controls .jessibuca-controls-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 100%; }
+    .jessibuca-container .jessibuca-controls .jessibuca-controls-bottom .jessibuca-controls-left {
+      display: flex;
+      align-items: center; }
+    .jessibuca-container .jessibuca-controls .jessibuca-controls-bottom .jessibuca-controls-right {
+      display: flex;
+      align-items: center; }
+
+.jessibuca-container.jessibuca-controls-show .jessibuca-controls {
+  opacity: 1;
+  visibility: visible; }
+
+.jessibuca-container.jessibuca-hide-cursor * {
+  cursor: none !important; }
+
+.jessibuca-container.jessibuca-fullscreen-web {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: #000; }
+
+.jessibuca-container .jessibuca-icon-loading {
+  width: 50px;
+  height: 50px;
+  background: url("../assets/loading.png") no-repeat center;
+  background-size: 100% 100%;
+  animation: rotation 1s linear infinite; }
+
+.jessibuca-container .jessibuca-icon-screenshot {
+  background: url("../assets/screenshot.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-screenshot:hover {
+    background: url("../assets/screenshot-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-play {
+  background: url("../assets/play.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-play:hover {
+    background: url("../assets/play-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-pause {
+  background: url("../assets/pause.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-pause:hover {
+    background: url("../assets/pause-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-record {
+  background: url("../assets/record.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-record:hover {
+    background: url("../assets/record-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-recordStop {
+  background: url("../assets/record-stop.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-recordStop:hover {
+    background: url("../assets/record-stop-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-fullscreen {
+  background: url("../assets/fullscreen.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-fullscreen:hover {
+    background: url("../assets/fullscreen-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-fullscreenExit {
+  background: url("../assets/exit-fullscreen.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-fullscreenExit:hover {
+    background: url("../assets/exit-fullscreen-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-audio {
+  background: url("../assets/audio.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-audio:hover {
+    background: url("../assets/audio-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-mute {
+  background: url("../assets/mute.png") no-repeat center;
+  background-size: 100% 100%; }
+  .jessibuca-container .jessibuca-icon-mute:hover {
+    background: url("../assets/mute-hover.png") no-repeat center;
+    background-size: 100% 100%; }
+
+.jessibuca-container .jessibuca-icon-text {
+  font-size: 14px;
+  width: 30px; }
+
+.jessibuca-container .jessibuca-speed {
+  font-size: 14px;
+  color: #fff; }
+
+.jessibuca-container .jessibuca-quality-menu-list {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: visibility 300ms, opacity 300ms;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px; }
+  .jessibuca-container .jessibuca-quality-menu-list.jessibuca-quality-menu-shown {
+    visibility: visible;
+    opacity: 1; }
+
+.jessibuca-container .icon-title-tips {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: visibility 300ms ease 0s, opacity 300ms ease 0s;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px; }
+
+.jessibuca-container .icon-title {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  color: white; }
+
+.jessibuca-container .jessibuca-quality-menu {
+  padding: 8px 0; }
+
+.jessibuca-container .jessibuca-quality-menu-item {
+  display: block;
+  height: 25px;
+  margin: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  width: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 300ms, background-color 300ms; }
+  .jessibuca-container .jessibuca-quality-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .jessibuca-container .jessibuca-quality-menu-item:focus {
+    outline: none; }
+  .jessibuca-container .jessibuca-quality-menu-item.jessibuca-quality-menu-item-active {
+    color: #2298FC; }
+
+.jessibuca-container .jessibuca-volume-panel-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(22%);
+  transition: visibility 300ms, opacity 300ms;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  height: 120px;
+  width: 50px;
+  overflow: hidden; }
+  .jessibuca-container .jessibuca-volume-panel-wrap.jessibuca-volume-panel-wrap-show {
+    visibility: visible;
+    opacity: 1; }
+
+.jessibuca-container .jessibuca-volume-panel {
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  height: 60px;
+  width: 50px;
+  overflow: hidden; }
+
+.jessibuca-container .jessibuca-volume-panel-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px; }
+
+.jessibuca-container .jessibuca-volume-panel-handle {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-left: -6px;
+  background: #fff; }
+  .jessibuca-container .jessibuca-volume-panel-handle::before {
+    bottom: -54px;
+    background: #fff; }
+  .jessibuca-container .jessibuca-volume-panel-handle::after {
+    bottom: 6px;
+    background: rgba(255, 255, 255, 0.2); }
+  .jessibuca-container .jessibuca-volume-panel-handle::before, .jessibuca-container .jessibuca-volume-panel-handle::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 3px;
+    margin-left: -1px;
+    height: 60px; }

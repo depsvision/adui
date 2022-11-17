@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-smoking-phone-call",
+  "use": "icon-smoking-phone-call-usage",
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-smoking-phone-call\">\n    <path d=\"M12.5,1 L12.5,23 L11.5,23 L11.5,1 L12.5,1 Z M21,5 C21.5522847,5 22,5.44771525 22,6 L22,18 C22,18.5522847 21.5522847,19 21,19 L15,19 C14.4477153,19 14,18.5522847 14,18 L14,6 C14,5.44771525 14.4477153,5 15,5 L21,5 Z M10,15 L10,17 L4,17 L4,15 L10,15 Z M3,15 L3,17 L2,17 L2,15 L3,15 Z M5.23622249,6 L5.39596963,6.08704297 C6.9064457,6.95925072 7.43411381,8.71060322 6.61637414,10.1376166 L6.5269662,10.2840323 L4.76377751,13 L4.60403037,12.912957 C3.0935543,12.0407493 2.56588619,10.2893968 3.38362586,8.86238342 L3.4730338,8.71596767 L5.23622249,6 Z M19.5,6 L16.5,6 C16.2238576,6 16,6.22385763 16,6.5 C16,6.74545989 16.1768752,6.94960837 16.4101244,6.99194433 L16.5,7 L19.5,7 C19.7761424,7 20,6.77614237 20,6.5 C20,6.22385763 19.7761424,6 19.5,6 Z\" id=\"icon-smoking-phone-call_smoking-phone\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

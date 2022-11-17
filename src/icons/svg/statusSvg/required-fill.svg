@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-required-fill",
+  "use": "icon-required-fill-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-required-fill\"><defs><style type=\"text/css\"></style></defs><path d=\"M554.666667 256v182.058667l157.696-91.008 42.666666 73.898666L597.376 512l157.653333 91.050667-42.666666 73.898666L554.666667 585.898667V768h-85.333334v-182.101333l-157.696 91.050666-42.666666-73.898666 157.653333-91.093334-157.653333-91.008 42.666666-73.898666L469.333333 438.058667V256h85.333334z\" p-id=\"5671\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

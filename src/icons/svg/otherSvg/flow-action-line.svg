@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-flow-action-line",
+  "use": "icon-flow-action-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-flow-action-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M330.965333 753.365333a42.496 42.496 0 0 1-24.704 12.16l-5.461333 0.341334h-213.333333v-85.333334h195.626666l409.941334-409.898666 4.010666-3.541334a42.453333 42.453333 0 0 1 20.608-8.576l5.546667-0.384h85.333333v-85.333333l128 128-128 128v-85.333333h-67.669333l-409.898667 409.898666z m150.869334-331.946666l-60.373334 60.416L283.093333 343.466667H87.466667v-85.333334h213.333333c9.088 0 18.218667 2.901333 25.813333 8.704l4.352 3.84 150.869334 150.784zM936.533333 723.2l-128 128v-85.333333h-85.333333a42.538667 42.538667 0 0 1-25.813333-8.704l-4.352-3.84-150.912-150.826667 60.373333-60.373333 138.325333 138.368h67.669334v-85.333334l128 128z\" p-id=\"6283\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

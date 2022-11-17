@@ -1,0 +1,28 @@
+const getters = {
+  voiceBroadcast: state => state.audio.voiceBroadcast,
+  voiceOption: state => state.audio.voiceOption,
+  screenResolution: state => state.resolution.screenResolution,
+  searchConditionExpand: state => state.resolution.searchConditionExpand,
+  elementSize: state => state.resolution.elementSize,
+  dialog: state => state.dialog.dialog,
+  checkStart: state => state.dialog.checkStart,
+  closeDialogName: state => state.dialog.closeDialogName,
+  button: state => state.button.button,
+  buttonScope: state => state.button.scope,
+  deliver: state => state.button.deliver,
+  imageViewer: state => state.image.imageViewer,
+  imageViewerRef: state => state.image.imageViewerRef,
+  globalData: state => state.data.globalData,
+  session: state => state.storage.session,
+  size: state => state.app.size,
+  device: state => state.app.device,
+  videoId: state => state.video.videoId,
+  token: state => state.user.token,
+  authority: state => state.user.authority,
+  authTime: state => state.user.authTime,
+  permissionRoutes: state => state.permission.permissionRoutes,
+  accessedRoutes: state => state.permission.accessedRoutes,
+  aside: state => state.menu.aside,
+  streamSaver: state => state.streamsaver.streamSaver
+}
+export default getters

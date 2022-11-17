@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-sandglass-line",
+  "use": "icon-sandglass-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-sandglass-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M810.666667 853.333333a42.666667 42.666667 0 0 1 0 85.333334H213.333333a42.666667 42.666667 0 0 1 0-85.333334v-85.333333a298.496 298.496 0 0 1 144.768-256 298.410667 298.410667 0 0 1-144.597333-245.76L213.333333 256V170.666667a42.666667 42.666667 0 1 1 0-85.333334h597.333334a42.666667 42.666667 0 0 1 0 85.333334v85.333333a298.496 298.496 0 0 1-144.768 256A298.368 298.368 0 0 1 810.666667 768v85.333333zM725.333333 170.666667H298.666667v85.333333a213.333333 213.333333 0 0 0 426.453333 9.258667L725.333333 256V170.666667z m-85.333333 85.333333a128 128 0 0 1-255.786667 7.509333L384 256h256z m85.333333 597.333333v-85.333333a213.333333 213.333333 0 0 0-426.666666 0v85.333333h85.333333v-13.056a85.333333 85.333333 0 0 1 71.296-84.181333L640 725.333333v128h85.333333z\" p-id=\"7612\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

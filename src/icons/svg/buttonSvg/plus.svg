@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-plus",
+  "use": "icon-plus-usage",
+  "viewBox": "0 0 20 20",
+  "content": "<symbol viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-plus\">\n    <polygon id=\"icon-plus_add\" points=\"10.8333333 4.16666667 10.8333333 9.16666667 15.8333333 9.16666667 15.8333333 10.8333333 10.8333333 10.8333333 10.8333333 15.8333333 9.16666667 15.8333333 9.16666667 10.8333333 4.16666667 10.8333333 4.16666667 9.16666667 9.16666667 9.16666667 9.16666667 4.16666667\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

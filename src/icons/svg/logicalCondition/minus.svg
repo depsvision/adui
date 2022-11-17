@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-minus",
+  "use": "icon-minus-usage",
+  "viewBox": "0 0 3072 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 3072 1024\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-minus\"><path d=\"M204.8 460.8h614.4v102.4H204.8z\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

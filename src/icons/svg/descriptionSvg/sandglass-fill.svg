@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-sandglass-fill",
+  "use": "icon-sandglass-fill-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-sandglass-fill\"><defs><style type=\"text/css\"></style></defs><path d=\"M213.333333 768a298.496 298.496 0 0 1 144.768-256 298.410667 298.410667 0 0 1-144.597333-245.76L213.333333 256V170.666667a42.666667 42.666667 0 1 1 0-85.333334h597.333334a42.666667 42.666667 0 0 1 0 85.333334v85.333333a298.496 298.496 0 0 1-144.768 256 298.410667 298.410667 0 0 1 144.597333 245.76L810.666667 768v85.333333a42.666667 42.666667 0 0 1 0 85.333334H213.333333a42.666667 42.666667 0 0 1 0-85.333334v-85.333333z m298.666667-213.333333a213.333333 213.333333 0 0 0-212.864 199.04l409.6-68.266667A213.376 213.376 0 0 0 512 554.666667z m213.333333-384H298.666667v85.333333h426.666666V170.666667z\" p-id=\"7051\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-clearing-up-line",
+  "use": "icon-clearing-up-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-clearing-up-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M554.666667 85.333333a42.666667 42.666667 0 0 1 42.666666 42.666667v213.333333h176.341334a42.666667 42.666667 0 0 1 42.24 36.650667L896 938.666667H128L208.085333 377.984A42.666667 42.666667 0 0 1 250.325333 341.333333H426.666667V128a42.666667 42.666667 0 0 1 42.666666-42.666667h85.333334z m206.464 512H262.826667l-34.133334 256H384v-85.333333h85.333333v85.333333h85.333334v-170.666666h85.333333v170.666666h155.306667l-34.176-256z m-22.741334-170.666666H285.610667l-11.392 85.333333h475.52l-11.349334-85.333333z\" p-id=\"7010\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-play",
+  "use": "icon-play-usage",
+  "viewBox": "0 0 20 20",
+  "content": "<symbol viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-play\">\n    <path d=\"M5.40855103,3.19855996 L16.208777,9.27368705 C16.6099085,9.49932356 16.7521754,10.0074195 16.5265389,10.408551 C16.4517149,10.5415714 16.3417974,10.651489 16.208777,10.7263129 L5.40855103,16.80144 C5.00741947,17.0270765 4.49932356,16.8848097 4.27368705,16.4836781 C4.20352378,16.3589434 4.16666667,16.2182411 4.16666667,16.0751271 L4.16666667,3.9248729 C4.16666667,3.46463561 4.53976271,3.09153957 5,3.09153957 C5.14311405,3.09153957 5.28381633,3.12839669 5.40855103,3.19855996 Z\" id=\"icon-play_矩形\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

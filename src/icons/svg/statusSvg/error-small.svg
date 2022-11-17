@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-error-small",
+  "use": "icon-error-small-usage",
+  "viewBox": "0 0 20 20",
+  "content": "<symbol viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-error-small\">\n    <polygon id=\"icon-error-small_路径\" points=\"15.3033009 5.87521044 11.1785113 10 15.3033009 14.1247896 14.1247896 15.3033009 10 11.1785113 5.87521044 15.3033009 4.69669914 14.1247896 8.8214887 10 4.69669914 5.87521044 5.87521044 4.69669914 10 8.8214887 14.1247896 4.69669914\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

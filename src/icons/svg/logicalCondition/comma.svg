@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-comma",
+  "use": "icon-comma-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-comma\"><path d=\"M478.208 716.8h107.8272a20.48 20.48 0 0 1 19.456 26.9312l-88.7808 266.24a20.48 20.48 0 0 1-19.456 14.0288h-63.488a20.48 20.48 0 0 1-20.48-20.48l0.3072-3.3792 44.3392-266.24A20.48 20.48 0 0 1 478.208 716.8z\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

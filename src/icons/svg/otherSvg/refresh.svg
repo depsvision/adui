@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-refresh",
+  "use": "icon-refresh-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-refresh\"><defs><style type=\"text/css\"></style></defs><path d=\"M240.469333 119.808L307.584 186.88a384 384 0 1 1-179.413333 336.469333L128 512h85.333333a298.666667 298.666667 0 1 0 156.586667-262.784l51.584 51.626667-211.2 30.122666 30.165333-211.2z\" p-id=\"6506\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

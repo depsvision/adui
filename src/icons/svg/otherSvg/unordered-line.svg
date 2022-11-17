@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-unordered-line",
+  "use": "icon-unordered-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-unordered-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M512 298.666667a213.333333 213.333333 0 1 1 0 426.666666 213.333333 213.333333 0 0 1 0-426.666666z m0 85.333333a128 128 0 1 0 0 256 128 128 0 0 0 0-256z\" p-id=\"5316\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

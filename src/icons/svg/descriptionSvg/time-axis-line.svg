@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-time-axis-line",
+  "use": "icon-time-axis-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-time-axis-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M597.333333 128a128 128 0 0 1 42.666667 248.704V853.333333h-85.333333V376.746667A128.042667 128.042667 0 0 1 597.333333 128z m-128 298.709333L170.666667 426.666667v256h85.333333v-128h85.333333v128h85.333334v-128h85.333333v213.333333H128a42.666667 42.666667 0 0 1-42.666667-42.666667V384a42.666667 42.666667 0 0 1 42.666667-42.666667h273.749333a214.101333 214.101333 0 0 0 67.626667 85.376zM896 341.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v341.333333a42.666667 42.666667 0 0 1-42.666667 42.666667h-213.333333v-213.333333h85.333333v128h85.333333v-256l-128 0.042666a214.101333 214.101333 0 0 0 67.584-85.333333L896 341.333333z\" p-id=\"7525\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

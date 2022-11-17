@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-attention",
+  "use": "icon-attention-usage",
+  "viewBox": "0 0 20 20",
+  "content": "<symbol viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-attention\">\n    <path d=\"M10,2.5 C14.1421356,2.5 17.5,5.85786438 17.5,10 C17.5,14.1421356 14.1421356,17.5 10,17.5 C5.85786438,17.5 2.5,14.1421356 2.5,10 C2.5,5.85786438 5.85786438,2.5 10,2.5 Z M10,4.16666667 C6.77833896,4.16666667 4.16666667,6.77833896 4.16666667,10 C4.16666667,13.221661 6.77833896,15.8333333 10,15.8333333 C13.221661,15.8333333 15.8333333,13.221661 15.8333333,10 C15.8333333,6.77833896 13.221661,4.16666667 10,4.16666667 Z\" id=\"icon-attention_形状结合\" />\n    <rect id=\"icon-attention_矩形\" x=\"6.66666667\" y=\"9.16666667\" width=\"6.66666667\" height=\"1.66666667\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

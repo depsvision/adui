@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-error-line",
+  "use": "icon-error-line-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-error-line\"><defs><style type=\"text/css\"></style></defs><path d=\"M512 0c282.752 0 512 229.248 512 512s-229.248 512-512 512S0 794.752 0 512 229.248 0 512 0z m0 85.333333C276.352 85.333333 85.333333 276.352 85.333333 512s191.018667 426.666667 426.666667 426.666667 426.666667-191.018667 426.666667-426.666667S747.648 85.333333 512 85.333333z m150.869333 185.301334l90.453334 90.496L602.538667 512l150.869333 150.869333-90.496 90.453334L512 602.538667l-150.869333 150.869333-90.453334-90.496L421.461333 512 270.634667 361.130667l90.496-90.453334L512 421.461333l150.869333-150.869333z\" p-id=\"5927\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

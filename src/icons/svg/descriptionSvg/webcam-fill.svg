@@ -1,0 +1,10 @@
+import SpriteSymbol from "svg-baker-runtime/browser-symbol";
+import sprite from "svg-sprite-loader/runtime/browser-sprite.build";
+var symbol = new SpriteSymbol({
+  "id": "icon-webcam-fill",
+  "use": "icon-webcam-fill-usage",
+  "viewBox": "0 0 16 16",
+  "content": "<symbol viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-webcam-fill\">\n    <path d=\"M12.0047131,8.805056 C12.0757912,9.84506828 12.9419483,10.6666667 14,10.6666667 L14,12.6666667 C12.2058129,12.6666667 10.6875275,11.485391 10.1804576,9.85815347 L12.0047131,8.805056 Z M4.19059892,5.73525712 L7.19059892,10.9314095 L6.03589838,11.5980762 L1.30384758,7.40192379 L4.19059892,5.73525712 Z M12.0294858,1.97927406 L14.3628191,6.02072594 C14.546914,6.33958769 14.4376639,6.74731463 14.1188022,6.93140954 L7.76794919,10.5980762 L4.76794919,5.40192379 L11.1188022,1.73525712 C11.4376639,1.55116221 11.8453908,1.66041231 12.0294858,1.97927406 Z\" id=\"icon-webcam-fill_webcam\" />\n</symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol
