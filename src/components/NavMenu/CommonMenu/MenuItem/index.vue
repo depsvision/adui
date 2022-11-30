@@ -8,7 +8,7 @@
       class="menu-item-padding"
     >
       <el-badge
-        :hidden="componentOption.meta && componentOption.meta.badge && componentOption.badge.position === 'div'"
+        :hidden="(!!componentOption.meta && !!componentOption.meta.badge && componentOption.badge.position === 'div') || (preconditions('value') == null)"
         :max="preconditions('max')"
         :type="preconditions('type')"
         :value="preconditions('value')"
@@ -20,7 +20,7 @@
           <i v-if="checkIsMeta('icon')" :class="checkIsMeta('icon')" />
           <svg-icon v-if="checkIsMeta('svgIcon')" :class="[...checkIsMeta('svgClass')]" :icon-class="checkIsMeta('svgIcon')" />
           <el-badge
-            :hidden="componentOption.meta && componentOption.meta.badge && componentOption.badge.position === 'span'"
+            :hidden="(!!componentOption.meta && !!componentOption.meta.badge && componentOption.badge.position === 'span') || (preconditions('value') == null)"
             :max="preconditions('max')"
             :type="preconditions('type')"
             :value="preconditions('value')"
