@@ -36,9 +36,9 @@
         />
       </div>
       <div v-show="componentOption.cropper" class="import-img-cropper-buttons">
-        <el-button type="text" @click="confirmCropper">更新头像</el-button>
+        <el-button link type="primary" @click="confirmCropper">更新头像</el-button>
         <common-upload ref="commonUpload" :component-option="componentOption.avatarUpload" @handleUploadStatus="handleUploadStatus">
-          <el-button ref="uploadButton" type="text">重新上传</el-button>
+          <el-button ref="uploadButton" link type="primary">重新上传</el-button>
         </common-upload>
       </div>
       <div
@@ -253,7 +253,7 @@ export default {
         display: flex;
 
         &.is-cropper-img {
-          ::v-deep .el-image {
+          :deep( .el-image ) {
 
             img {
               height: 48px;
@@ -299,7 +299,7 @@ export default {
         border-radius: 50%;
       }
 
-      ::v-deep .upload-img-button {
+      :deep( .upload-img-button ) {
         line-height: 1;
         margin-top: 24px;
 
@@ -347,7 +347,7 @@ export default {
         }
       }
 
-      ::v-deep .el-loading-mask  {
+      :deep( .el-loading-mask  ) {
 
         .el-loading-spinner {
           display: flex;
@@ -369,7 +369,7 @@ export default {
     align-items: center;
     justify-content: center;
 
-    ::v-deep .avatar-cropper-block {
+    :deep( .avatar-cropper-block ) {
       width: 150px;
       height: 150px;
 

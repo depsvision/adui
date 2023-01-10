@@ -603,7 +603,7 @@ input:-internal-autofill-previewed,input:-internal-autofill-selected {
 
 .el-input .el-input__inner {
     font-size: 14px;
-    color: #0e1b2e
+    color: #0e1b2e;
 }
 
 .el-input .el-input__inner:focus,.el-input .el-input__inner:hover {
@@ -1120,7 +1120,7 @@ input:-internal-autofill-previewed,input:-internal-autofill-selected {
     margin-left: 24px
 }
 
-.el-dialog__wrapper .el-dialog .el-dialog__body .multiple-shell-container .dialog-shell-view ::v-deep .head-slot-container .head-slot-block .head-slot-text {
+.el-dialog__wrapper .el-dialog .el-dialog__body .multiple-shell-container .dialog-shell-view :deep( .head-slot-container .head-slot-block .head-slot-text ) {
     filter: opacity(.85)
 }
 
@@ -1672,12 +1672,12 @@ input:-internal-autofill-previewed,input:-internal-autofill-selected {
 
 .el-form.is-inner .el-form-item .el-form-item__label {
     color: rgba(14,27,46,.65);
-    line-height: 36px
+    // line-height: 36px
 }
 
 .el-form.is-inner .el-form-item .el-form-item__content {
     color: rgba(14,27,46,.85);
-    line-height: 36px
+    // line-height: 36px
 }
 
 .el-form .is-block-inner .el-form-item,.el-form.is-inner.bottom-0 .el-form-item {
@@ -1730,9 +1730,9 @@ input:-internal-autofill-previewed,input:-internal-autofill-selected {
     padding-left: 8px
 }
 
-.el-checkbox,.el-checkbox-group {
-    display: inline-block
-}
+// .el-checkbox,.el-checkbox-group {
+//     display: inline-block
+// }
 
 .el-checkbox {
     color: #0e1b2e;
@@ -1898,7 +1898,11 @@ input:-internal-autofill-previewed,input:-internal-autofill-selected {
     border-bottom-color: #fff;
     border-top-color: #fff
 }
-
+.el-tree-node__label {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
 .el-tooltip__popper.tooltip-status-list {
     padding: 4px 0
 }

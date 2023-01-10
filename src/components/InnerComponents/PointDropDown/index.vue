@@ -146,7 +146,7 @@ export default {
             }
         }
 
-        ::v-deep .el-button {
+        :deep( .el-button ) {
 
             &>span {
                 display: flex;

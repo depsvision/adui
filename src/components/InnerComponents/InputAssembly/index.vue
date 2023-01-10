@@ -171,7 +171,7 @@ export default {
     width: 100%;
   }
 
-  ::v-deep .el-textarea {
+  :deep( .el-textarea ) {
 
     .el-textarea__inner {
       height: 100%;

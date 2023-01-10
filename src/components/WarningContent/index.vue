@@ -102,7 +102,7 @@ export default {
   .warning-content-buttons {
     margin-left: 4px;
 
-    ::v-deep .el-button {
+    :deep( .el-button ) {
 
       &>span {
         font-size: 12px;

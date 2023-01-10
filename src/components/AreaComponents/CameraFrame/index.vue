@@ -208,7 +208,7 @@ export default {
           width: 186px;
           border-right: 1px solid rgba(27, 53, 89, .2);
 
-          ::v-deep .el-tree {
+          :deep(.el-tree) {
             background-color: unset;
 
             .el-tree-node__content {
@@ -275,7 +275,7 @@ export default {
     }
   }
 
-  ::v-deep .el-radio {
+  :deep(.el-radio) {
     display: flex;
   }
 

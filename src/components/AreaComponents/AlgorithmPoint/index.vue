@@ -23,7 +23,7 @@
         </div>
         <el-input
           v-model.trim="point.search"
-          size="medium"
+          size="default"
           placeholder="点位ID / 点位名称"
           clearable
           @input="searchPoint"
@@ -159,7 +159,7 @@ export default {
       algorithm: {
         select: {
           value: [],
-          size: 'medium',
+          size: 'default',
           placeholder: '请选择算法',
           multiple: true,
           selectStyle: {
@@ -192,7 +192,8 @@ export default {
                   {
                     label: '选择点位',
                     value: 'showTreeList',
-                    type: 'text'
+                    link: true,
+                    type: 'primary'
                   }
                 ]
               }
@@ -207,12 +208,14 @@ export default {
                   {
                     label: '点击选中',
                     value: 'choosePoint',
-                    type: 'text'
+                    type: 'primary',
+                    link: true
                   },
                   {
                     label: '已选中',
                     value: 'choosed',
-                    type: 'text'
+                    type: 'primary',
+                    link: true
                   }
                 ]
               }
@@ -310,7 +313,7 @@ export default {
                   {
                     label: '修改',
                     value: 'editFilter',
-                    type: 'text'
+                    type: 'primary'
                   }
                 ]
               }
@@ -1115,7 +1118,7 @@ export default {
         box-sizing: border-box;
       }
 
-      ::v-deep .select-assembly-container {
+      :deep(.select-assembly-container) {
 
         .el-tag {
           color: rgba(24, 114, 240, 1);
@@ -1183,7 +1186,7 @@ export default {
     .algorithm-point-filter {
       margin-left: 12px;
 
-      ::v-deep .el-button {
+      ::deep(.el-button) {
         font-size: 14px;
         padding: 4px;
       }
@@ -1227,7 +1230,7 @@ export default {
         }
       }
 
-      ::v-deep .el-button {
+      :deep(.el-button) {
 
         padding: 7px 12px;
       }

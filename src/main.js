@@ -11,6 +11,13 @@ const Vue = createApp(App)
 const app = Vue
 app.use(ElementPlus)
 
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component)
+}
+
+
 import router from './router'
 
 import Vuex from 'vuex'
@@ -91,7 +98,7 @@ app.config.globalProperties.$messageInfo = function (msg) {
         offset: 70
     }
     const option = Object.assign(msg, change)
-    Vue.$message(option)
+    app.config.globalProperties.$message(option)
 }
 
 // register global utility filters

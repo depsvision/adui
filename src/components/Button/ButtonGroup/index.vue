@@ -1,5 +1,5 @@
 <template>
-  <div class="button-group-container" :style="componentOption.style" :class="[...componentOption.class]">
+  <div class="button-group-container" :style="componentOption.style" :class="[...(componentOption.class ? componentOption.class : [])]">
     <span
       v-for="(button,buttonIndex) in componentOption.buttons || componentOption.value"
       v-show="buttonCrossAttribute(button,'hide',true)"
@@ -18,7 +18,7 @@
       <el-tooltip
         :disabled="!button.tooltip"
         :content="button.tooltip || button.value"
-        :open-delay="componentOption.openDelay || 0"
+        :show-after="componentOption.openDelay || 0"
         :placement="button.placement || 'top'"
         :effect="button.effect"
       >
@@ -28,8 +28,9 @@
           v-show="!button.hide"
           :loading="dealLoading(button)"
           :disabled="buttonCrossAttribute(button,'disabled')"
+          :link="button.link"
           :type="button.type"
-          :size="elementSize"
+          size="default"
           :plain="button.plain"
           :class="buttonClass(button)"
           :style="button.innerStyle"
@@ -154,6 +155,7 @@ export default {
   },
   methods: {
     handleButtonClick(button) {
+        console.log(1232)
       const timer = button.timer !== undefined ? button.timer : 500
 
       this.$emit('handleClickButton')

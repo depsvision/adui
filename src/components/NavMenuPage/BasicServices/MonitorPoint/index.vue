@@ -250,7 +250,7 @@ export default {
                 {
                   label: '设置',
                   value: 'openFilterImg',
-                  type: 'text'
+                  type: 'primary'
                 }
               ]
             }

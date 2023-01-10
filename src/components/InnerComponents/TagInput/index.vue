@@ -228,7 +228,7 @@ export default {
     }
   }
 
-  ::v-deep .el-input {
+  :deep( .el-input ) {
     line-height: 1;
 
     input {
@@ -239,7 +239,7 @@ export default {
     }
   }
 
-  ::v-deep .el-tag {
+  :deep( .el-tag ) {
     display: inline-flex;
     align-items: center;
     margin: 3px 0 3px 8px;

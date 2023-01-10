@@ -94,7 +94,7 @@ export default {
     align-items: center;
   }
 
-  ::v-deep .slider-control-left {
+  :deep( .slider-control-left ) {
 
     .el-slider__runway {
       height: 4px;

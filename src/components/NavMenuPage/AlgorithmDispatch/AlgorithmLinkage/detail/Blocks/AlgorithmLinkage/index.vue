@@ -203,7 +203,7 @@ export default {
 
   .linkage-inner-form{
 
-    ::v-deep .head-slot-container {
+    :deep( .head-slot-container ) {
 
       .el-form-item {
         margin-bottom: 8px;

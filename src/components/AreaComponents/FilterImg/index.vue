@@ -234,7 +234,7 @@ export default {
     justify-content: center;
     background-color: rgba(14, 27, 46, 0.1);
 
-    ::v-deep .button-span-layout.span-button_text{
+    :deep(.button-span-layout.span-button_text){
 
       &+.button-span-layout.span-button_text {
         margin-left: 48px;

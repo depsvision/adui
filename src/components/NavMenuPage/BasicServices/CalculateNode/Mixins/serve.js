@@ -486,12 +486,12 @@ export default {
             service.tasksString = service.tasks
           })
 
-          this.$set(this.physicalNode[this.activeTableIndex].tableOption, 'tableData', serviceList)
+          this.physicalNode[this.activeTableIndex].tableOption['tableData'] = serviceList
 
           if (!serviceList.length) {
-            this.$set(this.physicalNode[this.activeTableIndex].leftButtons.buttons[2], 'disabled', true)
+            this.physicalNode[this.activeTableIndex].leftButtons.buttons[2]['disabled'] = true
           } else {
-            this.$set(this.physicalNode[this.activeTableIndex].leftButtons.buttons[2], 'disabled', false)
+            this.physicalNode[this.activeTableIndex].leftButtons.buttons[2]['disabled'] = false
           }
 
           this.$nextTick(() => {

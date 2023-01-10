@@ -536,7 +536,7 @@ export default {
 
   .cloud-collaboration-synchronize-status {
 
-    ::v-deep .head-slot-body {
+    :deep( .head-slot-body ) {
       flex-flow: column;
 
       .form-list-container {
@@ -546,7 +546,7 @@ export default {
   }
 
   .synchronize-data {
-    ::v-deep .head-slot-body {
+    :deep( .head-slot-body ) {
       flex-flow: column;
 
       .form-list-container {

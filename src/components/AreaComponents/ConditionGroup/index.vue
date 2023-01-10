@@ -12,7 +12,7 @@
           ref="nameInput"
           v-model="componentOption.head.name"
           plain
-          size="mini"
+          size="small"
           :style="{
             width: `${componentOption.head.width || 224}px`
           }"
@@ -48,7 +48,7 @@
           <div v-for="(input,inputIndex) in componentOption.condition.judgment.input" :key="inputIndex">
             <el-input
               v-model="input.value"
-              size="medium"
+              size="default"
               :style="{
                 width: `${input.width}px`
               }"
@@ -62,7 +62,7 @@
               v-if="input.select"
               v-model="input.select.value"
               class="judgment-select"
-              size="medium"
+              size="default"
               :style="{
                 width: `${input.select.width}px`
               }"
@@ -83,7 +83,7 @@
         <div class="condition-item-params">
           <el-input
             v-model="componentOption.condition.output.value"
-            size="medium"
+            size="default"
             :style="{
               width: `${componentOption.condition.output.width}px`
             }"
@@ -172,7 +172,7 @@ export default {
     border-bottom: 1px solid #E1E3E6;
     padding-bottom: 4px;
 
-    ::v-deep .button-group-container {
+    :deep(.button-group-container) {
       margin-left: 8px;
 
       .el-button {
@@ -200,7 +200,7 @@ export default {
           color: rgba(7, 14, 23, 0.55);
         }
 
-        ::v-deep .el-input {
+        :deep(.el-input) {
 
           .judgment-unit {
             font-size: 12px;

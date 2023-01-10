@@ -172,7 +172,7 @@ export default {
       border-radius: 16px;
       background-image: linear-gradient(121deg, #115da6, #143666);
 
-      ::v-deep .el-form-item {
+      :deep( .el-form-item ) {
         margin-bottom: 16px;
 
         &.password-form-item {

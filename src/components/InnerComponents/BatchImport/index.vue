@@ -190,7 +190,7 @@ export default {
 
   .import-information {
 
-    ::v-deep .head-slot-container {
+    :deep( .head-slot-container ) {
 
       .head-slot-block {
         line-height: 36px;
@@ -209,7 +209,7 @@ export default {
 
     .import-information-result {
 
-      ::v-deep .el-form .el-form-item  {
+      :deep( .el-form .el-form-item  ) {
         margin-bottom: 0;
 
         .el-form-item__label,
@@ -245,7 +245,7 @@ export default {
 
     .error-result-head {
 
-      ::v-deep .head-slot-block {
+      :deep( .head-slot-block ) {
         margin-bottom: 8px;
       }
     }

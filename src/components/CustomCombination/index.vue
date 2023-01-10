@@ -262,7 +262,7 @@ export default {
       //   pointer-events: unset;
       // }
 
-      ::v-deep .el-textarea__inner {
+      :deep( .el-textarea__inner ) {
         min-height: 98px !important;
         padding: 8px 16px;
       }
@@ -319,7 +319,7 @@ export default {
 
         &.is-disabled {
 
-          ::v-deep .el-tree {
+          :deep( .el-tree ) {
             .tree-item-label, .tree-item-right {
               color: rgba(14, 27, 46, 0.35);
             }
@@ -331,7 +331,7 @@ export default {
           overflow-y: overlay;
           padding: 4px 0;
 
-          ::v-deep .el-tree {
+          :deep( .el-tree ) {
 
             .el-tree-node {
 

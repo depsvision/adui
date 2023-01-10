@@ -47,7 +47,7 @@ export default {
 <style scoped lang="scss">
 .test-callback-container {
 
-  ::v-deep .head-slot-container {
+  :deep( .head-slot-container ) {
     .head-slot-block {
 
       .head-slot-text {
@@ -90,7 +90,7 @@ export default {
     .test-callback-result {
       margin-top: 7px;
 
-      ::v-deep .el-form {
+      :deep( .el-form ) {
 
         .el-form-item {
           margin-bottom: 0;

@@ -222,7 +222,7 @@ export default {
 
     .alarm-voice-table {
 
-      ::v-deep .el-table {
+      :deep( .el-table ) {
 
         .is-default {
 

@@ -1,5 +1,5 @@
 const state = {
-  elementSize: 'medium',
+  elementSize: 'default',
   screenResolution: {
     width: 1920,
     height: 937

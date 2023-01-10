@@ -20,7 +20,7 @@
         :loading="dealLoading(componentOption)"
         :disabled="buttonCrossAttribute(componentOption,'disabled')"
         :type="componentOption.type"
-        :size="elementSize"
+        size="default"
         :plain="componentOption.plain"
         :class="buttonClass(componentOption,'popover')"
       >

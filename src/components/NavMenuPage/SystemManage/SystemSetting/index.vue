@@ -462,7 +462,7 @@ export default {
 
     .system-setting-head-slot{
 
-      ::v-deep .head-slot-body {
+      :deep( .head-slot-body ) {
         display: flex;
         flex-flow: column;
 
@@ -482,7 +482,7 @@ export default {
 
     .system-nosecret-head-slot {
 
-      ::v-deep .head-slot-body {
+      :deep( .head-slot-body ) {
         display: flex;
         flex-flow: column;
 
@@ -519,14 +519,14 @@ export default {
       }
     }
 
-    ::v-deep .span-assembly-content {
+    :deep( .span-assembly-content ) {
       display: inline-block;
       margin-right: 24px;
     }
 
     .system-version-head-slot {
 
-      ::v-deep .head-slot-body {
+      :deep( .head-slot-body ) {
         display: flex;
         flex-flow: column;
 

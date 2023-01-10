@@ -46,10 +46,10 @@ export default {
     dealData() {
       return form => {
         if (this.componentOption.data) {
-          this.$set(form, 'value', this.componentOption.data[form.prop])
+          form['value'] = this.componentOption.data[form.prop]
 
           if (form.type && form.type === 'tagAssembly' && !form[form.prop + 'Tag']) {
-            this.$set(form, form.prop + 'Tag', this.componentOption.data[form.prop])
+            form[form.prop + 'Tag'] = this.componentOption.data[form.prop]
           }
         }
         return form

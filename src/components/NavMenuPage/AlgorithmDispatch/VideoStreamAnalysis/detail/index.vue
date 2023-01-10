@@ -77,7 +77,7 @@ export default {
 
   .video-stream-detail-title {
 
-    ::v-deep .head-slot-block {
+    :deep( .head-slot-block ) {
       .el-button {
         i,
         svg {

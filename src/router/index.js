@@ -111,13 +111,13 @@ export const asyncRoutes = [
         children: [
             {
                 path: 'device-service',
-                component: () => import('@/components/Transition/RouteTransition/index.vue'),
+                // component: () => import('/src/components/Transition/RouteTransition/'),
                 name: 'DeviceService',
                 meta: { role: ['node', 'camera', 'record'], title: '设备与服务', svgIcon: 'device-service' },
                 children: [
                     {
                         path: 'calculate-node',
-                        component: () => import('@/components/NavMenuPage/BasicServices/CalculateNode/index.vue'),
+                        component: () => import('/src/components/NavMenuPage/BasicServices/CalculateNode'),
                         name: 'CalculateNode',
                         meta: { role: ['node'], title: '智能计算节点' }
                     },

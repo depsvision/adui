@@ -142,7 +142,7 @@ export default {
             display: flex;
             margin-bottom: 16px;
 
-            ::v-deep .el-image {
+            :deep( .el-image ) {
                 img {
                     max-width: 200px;
                     max-height: 32px;
@@ -159,7 +159,7 @@ export default {
             }
         }
 
-        ::v-deep .el-image__inner {
+        :deep( .el-image__inner ) {
             width: auto;
             height: auto;
         }
@@ -180,7 +180,7 @@ export default {
             min-height: 256px;
         }
 
-        ::v-deep .el-form-item {
+        :deep( .el-form-item ) {
             margin-bottom: 16px;
 
             &.password-form-item {

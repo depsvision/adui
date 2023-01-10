@@ -1,12 +1,12 @@
 <template>
-  <div ref="tableContainer" class="form-table-container" :class="[...componentOption.containerClass]">
+  <div ref="tableContainer" class="form-table-container" :class="[...(componentOption.containerClass ? componentOption.containerClass : [])]">
     <el-table
       ref="multipleTable"
       :key="reRenderTable"
       v-loading="componentOption.loading"
       :row-key="componentOption.rowKey"
       class="data-table"
-      :class="[...componentOption.tableClass]"
+      :class="[...(componentOption.tableClass ? componentOption.tableClass : [])]"
       :data="tableData"
       :border="componentOption.border"
       :max-height="componentOption.option && componentOption.option.maxHeight"
@@ -53,13 +53,13 @@
         :header-align="item.headerAlign"
         :show-overflow-tooltip="item.showOverflowTooltip"
       >
-        <template slot="header" slot-scope="scope">
+        <template #header="scope">
           <span :scope="scope" class="form-table-header-block">
             <span>{{ item.label }}</span>
             <slot :name="item.prop" />
           </span>
         </template>
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <el-tooltip
             :disabled="checkTextOverflow(item,scope) && (!item.tooltip || textOverflow(item,scope.row))"
             :content="item.tooltip && scope.row[item.prop + 'Content']"
@@ -72,7 +72,6 @@
               ref="component"
               :component-option="dealScope(item,scope)"
               @changeValue="value=>{changeComponentValue(value,item,scope)}"
-              v-on="$listeners"
             >
               <component
                 :is="item.slotIs"
@@ -214,13 +213,12 @@ import ButtonGroup from '@/components/Button/ButtonGroup'
 import SvgPainter from '@/components/SvgPainter'
 import ImageAssembly from '@/components/InnerComponents/ImageAssembly'
 import TagAssembly from '@/components/InnerComponents/TagAssembly'
-import countTo from '@/components/InnerComponents/CountTo'
 
 import loadingS from '@/directive/loading-s'
 
 export default {
   name: 'FormTable',
-  components: { ButtonGroup, SvgPainter, ImageAssembly, TagAssembly, countTo },
+  components: { ButtonGroup, SvgPainter, ImageAssembly, TagAssembly },
   directives: { loadingS },
   mixins: [Authority],
   props: {
@@ -525,7 +523,7 @@ export default {
   width: 100%;
   height: 100%;
 
-  ::v-deep .el-table {
+  :deep( .el-table ) {
 
     .form-table-header-block {
 
@@ -656,7 +654,7 @@ export default {
   }
 }
 
-::v-deep .el-image {
+:deep( .el-image ) {
   &:hover {
     cursor: pointer;
   }

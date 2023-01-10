@@ -318,7 +318,7 @@ export default {
 
     .role-manage-table {
 
-      ::v-deep .span-flex-reverse {
+      :deep( .span-flex-reverse ) {
         flex-flow: row-reverse;
         justify-content: flex-end;
 

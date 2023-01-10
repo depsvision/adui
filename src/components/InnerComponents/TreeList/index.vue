@@ -29,7 +29,7 @@
         <span>{{ componentOption.bottomHead }}</span>
         <div class="choice-search-block display-flex-layout">
           <span class="choice-search-input">
-            <el-input v-model="searchValue" size="medium" :placeholder="componentOption.placeholder" clearable>
+            <el-input v-model="searchValue" size="default" :placeholder="componentOption.placeholder" clearable>
               <i slot="suffix" class="el-input__icon el-icon-search" />
             </el-input>
           </span>
@@ -366,7 +366,7 @@ export default {
 .tree-list-container {
   width: 100%;
 
-  ::v-deep .custom-tree-node {
+  :deep(.custom-tree-node) {
     width: calc(100% - 35px);
   }
 
@@ -384,7 +384,7 @@ export default {
       overflow-x: hidden;
     }
 
-    ::v-deep .el-tag {
+    :deep(.el-tag) {
       margin-right:8px;
       margin-bottom: 6px;
 
@@ -409,19 +409,19 @@ export default {
       height: 100%;
       border-right: 1px solid rgba(27, 53, 89, .2);
 
-      ::v-deep .el-tabs__header  {
+      :deep(.el-tabs__header ) {
         margin-right: 0;
         .el-tabs__nav-wrap {
           border-right: 1px solid rgba(27, 53, 89, .2);
         }
       }
 
-      ::v-deep .el-tabs__content {
+      :deep(.el-tabs__content) {
         display: none;
       }
     }
 
-    ::v-deep .tab-content {
+    :deep(.tab-content) {
       flex: 1;
       display: flex;
       overflow: hidden;
@@ -493,7 +493,7 @@ export default {
 
     .choice-search-input {
       width: 214px;
-      ::v-deep .el-input {
+      :deep(.el-input) {
         width: 214px;
       }
       .el-icon-search {
@@ -504,7 +504,7 @@ export default {
     }
   }
 
-  ::v-deep .el-tabs__item {
+  :deep(.el-tabs__item) {
     height: 32px;
     line-height: 32px;
     font-size: 14px;
@@ -517,23 +517,23 @@ export default {
     }
   }
 
-  ::v-deep .el-tabs__nav-wrap::after {
+  :deep(.el-tabs__nav-wrap::after) {
     background-color:unset;
 
   }
 
-  ::v-deep .el-tabs--left .el-tabs__item.is-left {
+  :deep(.el-tabs--left .el-tabs__item.is-left) {
     text-align: center;
   }
 
-  ::v-deep .el-tabs--left .el-tabs__active-bar.is-left,
-  ::v-deep .el-tabs--left .el-tabs__nav-wrap.is-left::after {
+  :deep(.el-tabs--left .el-tabs__active-bar.is-left),
+  :deep(.el-tabs--left .el-tabs__nav-wrap.is-left::after) {
     left: 0;
     right: auto;
     top: 1px;
   }
 
-  ::v-deep .el-tabs__active-bar {
+  :deep(.el-tabs__active-bar) {
     display: none;
   }
 }

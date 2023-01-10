@@ -24,6 +24,14 @@ import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    server: {
+        proxy: {
+            '/api': {
+                // changeOrigin: true,
+                target: 'http://127.0.0.1:5000'
+            }
+        }
+    },
     plugins: [
         vueJsx(),
         vue(),
@@ -42,6 +50,7 @@ export default defineConfig({
         extensions: ['.cjs', '.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
+            process: "process/browser",
             path: 'path-browserify'
         }
     }

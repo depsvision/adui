@@ -105,7 +105,7 @@ export default {
     overflow-y: overlay;
     padding-right: 8px;
 
-    ::v-deep .el-form {
+    :deep( .el-form ) {
 
       .el-form-item {
         margin-bottom: 0;

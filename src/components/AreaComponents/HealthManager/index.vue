@@ -154,7 +154,7 @@ export default {
         display: flex;
         z-index: 2;
 
-        ::v-deep .draggable-layout {
+        :deep(.draggable-layout) {
           flex: 1;
 
           &>span {

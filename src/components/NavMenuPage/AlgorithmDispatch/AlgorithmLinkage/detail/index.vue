@@ -61,7 +61,7 @@ export default {
   width: 100%;
 
   .algorithm-linkage-detail-title {
-    ::v-deep .el-button {
+    :deep( .el-button ) {
       i,
       svg {
         font-size: 16px;

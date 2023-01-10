@@ -65,28 +65,7 @@ const judgedNext = async (to, from, next) => {
     try {
         // judge authority
         const authority = await store.dispatch('user/getAuthority')
-        // const authority = {
-        //     "limit": 1,
-        //     "role": {
-        //         "alert": 0,
-        //         "app": 0,
-        //         "callback": 0,
-        //         "callbackLog": 0,
-        //         "camera": 0,
-        //         "console": 0,
-        //         "imageTask": 0,
-        //         "linkage": 0,
-        //         "log": 0,
-        //         "material": 0,
-        //         "node": 0,
-        //         "oss": 0,
-        //         "record": 0,
-        //         "role": 0,
-        //         "setting": 0,
-        //         "task": 0,
-        //         "user": 0
-        //     }
-        // }
+
         const accessRoutes = await filterAccessRoute(authority)
 
         const routeTo = accessRoutes[0]
@@ -184,7 +163,7 @@ router.beforeEach((to, from, next) => {
                 NProgress.done()
             } else {
                 judgedNext(to, from, next)
-            }
+            }   
         } else {
             // check is no secret login
             if (whiteList.indexOf(to.path) !== -1) {

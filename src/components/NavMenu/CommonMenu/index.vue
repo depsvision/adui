@@ -47,6 +47,7 @@ export default {
     }
   },
   data() {
+    console.log('BBBBBB:', this.componentOption[this.componentOption.prop || 'menuGroup'])
     return {
       logoUrl: import('@/assets/image/logoImage/homeLogoWhite.png')
     }
@@ -84,7 +85,7 @@ export default {
 
 .el-menu--collapse {
 
-  ::v-deep .menu-item-container {
+  :deep( .menu-item-container ) {
     .submenu-menu-arrow {
       display: none;
     }

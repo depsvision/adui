@@ -9,7 +9,7 @@
         <div class="point-img-resolution">
           <el-input
             v-model.trim="componentOption.value.width"
-            size="medium"
+            size="default"
             :placeholder="componentOption.width"
             :class="[isWidthFocus?'is-focus':'']"
             :style="componentOption.inputStyle"
@@ -21,7 +21,7 @@
           <svg-icon icon-class="error-small" />
           <el-input
             v-model.trim="componentOption.value.height"
-            size="medium"
+            size="default"
             :placeholder="componentOption.height"
             :class="[isHeightFocus?'is-focus':'']"
             :style="componentOption.inputStyle"
@@ -86,7 +86,7 @@ export default {
     display: flex;
     margin-bottom: 8px;
 
-    ::v-deep .button-group-container {
+    :deep(.button-group-container) {
       margin-right: 24px;
 
       .el-button {
@@ -112,7 +112,7 @@ export default {
         margin-bottom: 8px;
       }
 
-      ::v-deep .point-img-resolution {
+      :deep(.point-img-resolution) {
         display: flex;
         align-items: center;
 
@@ -152,7 +152,7 @@ export default {
       transform: rotate(45deg);
     }
 
-    ::v-deep .image-layout {
+    :deep(.image-layout) {
       flex: 1;
       display: flex;
       justify-content: center;

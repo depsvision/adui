@@ -654,7 +654,7 @@ export default {
 
         .logo-block {
 
-          ::v-deep .el-image {
+          :deep( .el-image ) {
 
             img {
               max-height: 32px;
@@ -789,7 +789,7 @@ export default {
       }
     }
 
-    ::v-deep .point-drop-down-container {
+    :deep( .point-drop-down-container ) {
       margin-left: 8px;
 
       .point-dropdown-block {
@@ -908,7 +908,7 @@ export default {
         }
       }
 
-      ::v-deep .point-drop-down-container {
+      :deep( .point-drop-down-container ) {
 
         .point-dropdown-block {
 

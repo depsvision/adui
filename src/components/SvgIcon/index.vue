@@ -1,7 +1,8 @@
 <template>
-  <div v-if="isExternal" :style="styleExternalIcon" class="svg-external-icon svg-icon" v-on="$listeners" />
-  <component :is="componentOption.is" v-else-if="isComponent" :class="svgClass" aria-hidden="true" v-on="$listeners" />
-  <svg v-else :class="svgClass" aria-hidden="true" v-on="$listeners">
+  <div v-if="isExternal" :style="styleExternalIcon" class="svg-external-icon svg-icon" />
+  <component :is="componentOption.is" v-else-if="isComponent" :class="svgClass" aria-hidden="true" />
+  <!-- remove v-on for vue3 usage -->
+  <svg v-else :class="svgClass" aria-hidden="true" >
     <use :xlink:href="iconName" />
   </svg>
 </template>

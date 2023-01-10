@@ -211,7 +211,7 @@ export default {
 <style scoped lang="scss">
 .check-start-container {
 
-  ::v-deep .head-slot-container {
+  :deep(.head-slot-container) {
 
     .head-slot-block {
       height: 36px;
@@ -333,7 +333,7 @@ export default {
           .start-item-buttons {
             margin-left: 4px;
 
-            ::v-deep .el-button {
+            :deep(.el-button) {
 
               &>span {
                 line-height: 1;

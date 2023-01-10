@@ -59,7 +59,7 @@ export default {
 <style scoped lang="scss">
 .tab-assembly-container {
 
-  ::v-deep .el-tabs {
+  :deep( .el-tabs ) {
     flex: 1;
 
     .el-tabs__header {

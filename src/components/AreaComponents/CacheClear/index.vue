@@ -81,7 +81,7 @@ export default {
         margin-left: 8px;
       }
 
-      ::v-deep .el-progress {
+      :deep(.el-progress) {
         path {
           &:first-child {
             stroke: rgba(14, 27, 46, .1);

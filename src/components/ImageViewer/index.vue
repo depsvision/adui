@@ -65,7 +65,6 @@
                   ref="component"
                   :component-option="tool.option"
                   @changeInput="changeInput"
-                  v-on="$listeners"
                 />
               </div>
             </div>

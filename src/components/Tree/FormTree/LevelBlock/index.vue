@@ -25,7 +25,6 @@
           class="form-item-content"
           :component-option="dealSpanData(form)"
           @changeValue="value=>{changeComponentValue(value,form)}"
-          v-on="$listeners"
         >
           <slot :name="form.prop" />
         </component>
@@ -193,7 +192,7 @@ export default {
     margin-left: 6px;
   }
 
-  ::v-deep .el-form-item {
+  :deep( .el-form-item ) {
 
     .el-form-item__content {
       display: flex;

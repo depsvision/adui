@@ -9,7 +9,7 @@
       :multiple="componentOption.multiple"
       :collapse-tags="componentOption.collapseTags"
       :clearable="componentOption.clearable"
-      :class="[...componentOption.selectClass]"
+      :class="[...(componentOption.selectClass ?? [])]"
       @change="handleSelect"
       @visible-change="handleVisibleChange"
       @remove-tag="handleRemoveTag"

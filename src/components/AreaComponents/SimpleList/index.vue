@@ -27,7 +27,7 @@
         <el-input
           v-model.trim="list.value"
           :placeholder="componentOption.placeholder || list.placeholder"
-          size="medium"
+          size="default"
           :style="componentOption.inputStyle"
         />
         <transition name="el-zoom-in-top">
@@ -105,7 +105,7 @@ export default {
       top: 0;
       right: 8px;
 
-      ::v-deep .el-button {
+      :deep( .el-button ) {
         i,svg {
           font-size: 16px;
         }

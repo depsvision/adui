@@ -1,9 +1,9 @@
 <template>
     <div class="common-cascader-container">
         <el-cascader ref="cascader" v-model="componentOption.value" :options="componentOption.options"
-            popper-class="common-cascader" :size="elementSize" :style="componentOption.style"
+            popper-class="common-cascader" size="default" :style="componentOption.style"
             :props="componentOption.props" @change="handleChange">
-            <template slot-scope="{ node }">
+            <template #default="{ node }">
                 <svg-icon v-if="node.isLeaf" icon-class="camera-fill" class="cascader-label-svg" />
                 <span>{{ node.data.label }}</span>
             </template>

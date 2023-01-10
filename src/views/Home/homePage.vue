@@ -42,9 +42,11 @@
                 </div>
             </el-aside>
             <el-main class="main-out">
-                <transition name="fade-transform" mode="out-in">
-                    <router-view />
-                </transition>
+                <router-view v-slot="{ Component }">
+                    <transition name="fade-transform" mode="out-in">
+                        <component :is="Component" />
+                    </transition>
+                </router-view>
             </el-main>
         </el-container>
 
@@ -366,7 +368,7 @@ export default {
             let asideRoutes = []
             activeHeaderRoute && (asideRoutes = this.filterAsideRoutes(activeHeaderRoute).children)
             asideRoutes.forEach(item => {
-                item.basePath = headerPath
+                item.basePath = '/' + headerPath
             })
             this.menuOption.asideMenu.menuGroup = asideRoutes
 
@@ -448,6 +450,7 @@ export default {
             }
         },
         collapseAsideMenu(flag) {
+            this.menuOption.asideMenu.collapse = !this.menuOption.asideMenu.collapse
             this.$store.dispatch('menu/changeAsideData', { key: 'collapse', value: !flag })
         },
         intoSetting() {
@@ -489,7 +492,7 @@ export default {
                 display: flex;
                 margin-right: 16px;
 
-                ::v-deep .el-image {
+                :deep( .el-image ) {
                     img {
                         max-width: 200px;
                         max-height: 32px;
@@ -507,16 +510,16 @@ export default {
                 }
             }
 
-            ::v-deep .el-image__inner {
+            :deep( .el-image__inner ) {
                 width: auto;
                 height: auto;
             }
         }
 
-        ::v-deep .corerain-header-menu {
+        :deep( .corerain-header-menu ) {
             position: relative;
 
-            .el-submenu__title,
+            .el-sub-menu__title,
             .el-menu-item {
                 height: 60px;
                 line-height: 60px;
@@ -540,15 +543,15 @@ export default {
                 }
             }
 
-            .el-submenu {
+            .el-sub-menu {
                 &:focus-visible {
                     outline: none
                 }
             }
 
-            .el-submenu__title {
+            .el-sub-menu__title {
 
-                .el-submenu__icon-arrow {
+                .el-sub-menu__icon-arrow {
                     display: none;
                 }
             }
@@ -648,7 +651,7 @@ export default {
             margin-bottom: 8px;
         }
 
-        ::v-deep .corerain-aside-menu {
+        :deep( .corerain-aside-menu ) {
             border-right: none;
 
             &:not(.el-menu--collapse) {
@@ -664,7 +667,7 @@ export default {
                 background-color: #F5F7FA !important;
             }
 
-            .el-submenu__title {
+            .el-sub-menu__title {
                 height: 40px;
                 line-height: 40px;
                 overflow: hidden;
@@ -679,7 +682,7 @@ export default {
             &.el-menu--collapse {
                 width: 32px;
 
-                .el-submenu__title {
+                .el-sub-menu__title {
                     height: 32px;
                     line-height: 32px;
                     padding-left: 6px !important;
@@ -690,7 +693,7 @@ export default {
 
                 &.is-active {
 
-                    .el-submenu__title {
+                    .el-sub-menu__title {
                         background-color: rgba(31, 70, 122, 1) !important;
                     }
                 }

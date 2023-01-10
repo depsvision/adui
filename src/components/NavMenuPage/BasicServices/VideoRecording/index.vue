@@ -522,7 +522,7 @@ export default {
               flex: unset;
               flex-shrink: 0;
 
-              ::v-deep .image-svg-bg {
+              :deep( .image-svg-bg ) {
                 background-color: rgba(14, 27, 46, 1);
 
                 svg {
@@ -581,7 +581,7 @@ export default {
           height: 32px;
           display: flex;
 
-          ::v-deep canvas {
+          :deep( canvas ) {
             &:hover {
               cursor: pointer;
             }

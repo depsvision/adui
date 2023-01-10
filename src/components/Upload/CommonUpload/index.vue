@@ -127,7 +127,7 @@ export default {
 <style scoped lang="scss">
 .common-upload-container{
 
-  ::v-deep .common-upload-block {
+  :deep( .common-upload-block ) {
     display: flex;
 
     .el-upload-list {

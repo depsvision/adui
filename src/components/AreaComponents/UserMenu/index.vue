@@ -111,7 +111,7 @@ export default {
     align-items: center;
   }
 
-  ::v-deep .el-drawer__container {
+  :deep( .el-drawer__container ) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +150,7 @@ export default {
 
   }
 
-  ::v-deep .span-detail {
+  :deep( .span-detail ) {
     display: flex;
 
     .copy-span-button {
@@ -159,7 +159,7 @@ export default {
     }
   }
 
-  ::v-deep .import-img-format-tip {
+  :deep( .import-img-format-tip ) {
     font-size: 13px;
     color: #989696;
     margin-left: 10px;

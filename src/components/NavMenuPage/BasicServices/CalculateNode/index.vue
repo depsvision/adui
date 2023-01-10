@@ -111,7 +111,7 @@ export default {
           }
         },
         {
-          width: 60,
+          width: 64,
           align: 'left',
           label: 'ID',
           prop: 'serviceId',
@@ -270,6 +270,7 @@ export default {
     }
   },
   mounted() {
+    console.log(234233)
     this.init()
   },
   beforeDestroy() {
@@ -281,6 +282,7 @@ export default {
   },
   methods: {
     init() {
+
       this.getNodeData()
 
       if (!this.nodeTimer) {
@@ -347,7 +349,7 @@ export default {
 
         .physical-node-item-info {
 
-          ::v-deep .el-form-item {
+          :deep( .el-form-item ) {
             margin-bottom: 0;
 
             .el-form-item__label {
@@ -377,7 +379,7 @@ export default {
           display: flex;
           justify-content: space-between;
 
-          ::v-deep .point-drop-down-container {
+          :deep( .point-drop-down-container ) {
 
             .el-dropdown-link {
               font-size: 20px;
@@ -392,7 +394,7 @@ export default {
         flex: 1;
         overflow: hidden;
 
-        ::v-deep .el-table__fixed-body-wrapper {
+        :deep( .el-table__fixed-body-wrapper ) {
           z-index: 0;
         }
       }

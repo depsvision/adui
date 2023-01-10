@@ -63,7 +63,7 @@ export default {
 
       this.alarmStatisticsStandardTimeLine.option.series = lineSeries
 
-      this.$set(this.alarmStatisticsStandardTimeLine, 'change', Date.now())
+      this.alarmStatisticsStandardTimeLine['change'] = Date.now()
 
       const allDate = []
 
@@ -132,12 +132,12 @@ export default {
           break
         default:
       }
-      this.$set(this.alarmStatisticsStandardTimeLine, 'change', Date.now())
+      this.alarmStatisticsStandardTimeLine['change'] = Date.now()
 
       this.$nextTick(() => {
-        const lineSlider = this.$refs.lineSlider
+        // const lineSlider = this.$refs.lineSlider
 
-        lineSlider.$refs.button1.hideTooltip()
+        // lineSlider.$refs.button1.hideTooltip()
       })
     },
     dealLineDay(time, current) {

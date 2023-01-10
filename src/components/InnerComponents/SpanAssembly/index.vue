@@ -26,7 +26,7 @@
       v-else
       class="span-assembly-content"
       :class="[
-        componentOption.value?'has-text':'',...componentOption.spanClass,
+        componentOption.value?'has-text':'',...(componentOption.spanClass ? componentOption.spanClass : []),
         componentOption.isLink? 'is-link': ''
       ]"
       :style="componentOption.spanStyle"
@@ -89,7 +89,7 @@ export default {
   watch: {
     'componentOption.input'(val) {
       if (val) {
-        this.$set(this.componentOption, 'valueCache', this.componentOption.value)
+        this.componentOption['valueCache'] = this.componentOption.value
 
         this.buttonCache = []
 
@@ -114,7 +114,7 @@ export default {
   },
   methods: {
     init() {
-      this.$set(this.componentOption, 'valueCache', this.componentOption.value)
+      this.componentOption['valueCache'] = this.componentOption.value
     },
     onCopyCopy() {
       this.$messageInfo({

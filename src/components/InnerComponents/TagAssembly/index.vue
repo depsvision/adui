@@ -28,7 +28,7 @@
         ref="select"
         v-model="componentOption.popover.content"
         class="popover-content"
-        size="medium"
+        size="default"
         :placeholder="componentOption.popover.placeholder"
         popper-class="popover-inner-select"
       >
@@ -44,7 +44,7 @@
         v-else
         v-model="componentOption.popover.content"
         class="popover-content"
-        size="medium"
+        size="default"
         :placeholder="componentOption.popover.placeholder"
         @input="handleInput"
         @keyup.enter.native="handleAddTag"
@@ -248,7 +248,7 @@ export default {
     overflow: hidden;
   }
 
-  ::v-deep .tag-popover-button {
+  :deep( .tag-popover-button ) {
 
     i,svg {
       font-size: 24px;

@@ -54,7 +54,7 @@ export default {
 
     &.flex-column-class {
 
-      ::v-deep .el-radio {
+      :deep( .el-radio ) {
         margin-bottom: 16px;
 
         &:last-of-type{
@@ -63,7 +63,7 @@ export default {
       }
     }
 
-    ::v-deep .el-radio {
+    :deep( .el-radio ) {
 
       &.is-checked {
 

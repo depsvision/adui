@@ -188,7 +188,7 @@ export default {
 
         .card-item-info-bottom {
 
-          ::v-deep .tag-assembly-container {
+          :deep( .tag-assembly-container ) {
             flex-wrap: wrap;
 
             .el-tag {
